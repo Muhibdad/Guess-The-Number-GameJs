@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#eb8989b0 ;
+}
+.box{
+    /* text-align: center; */
+    margin: 20px 40px;
+    width: 600px;
+    background-color: #ebddddb0;
+    /* height:  120px; */
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius:10px ;
+
+}
+.number-box{
+    margin: 10px 40px;
+    font-size: 40px;
+    /* width: 600px; */
+    background-color: #ebddddb0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius:10px ;
+}
+.result-box{
+    /* text-align: center; */
+    margin: 70px 40px;
+    width: 600px;
+    background-color: #ebddddb0;
+    /* height:  120px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius:10px ;
+
+}
+.main-heading{
+    font-size: 50px;
+    margin-bottom: 10px;
+    animation-name:moveInRight ;
+    animation-duration: 1s;
+    margin-bottom: 10px; 
+}
+.sub-heading{
+    font-size: 30px;
+    animation-name:moveInBottom ;
+    animation-duration: 1s;
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    80%{
+        transform: translate(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.input-div{
+    /* margin: 5px 2px; */
+    font-size: 40px;
+    height: 60px;
+    width: 300px;
+    background-color: #ebddddb0;
+    position: absolute;
+    top: 45%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius:10px ;
+    /* margin: 20px 5px 20px 5px; */
+   /* display: inline-block; */
+}
+#input{
+    width: 120px;
+    
+}
+#input, .submit-btn{
+    font-size: 20px;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+.submit-btn{
+    transition: all 0.2s;
+    padding: 0 4px;
+}
+.input:hover,.submit-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1px 20px rgba(0,0,0,.2);
+}
+.submit-btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
+
